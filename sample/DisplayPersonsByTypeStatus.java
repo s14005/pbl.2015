@@ -101,6 +101,9 @@ public class DisplayPersonsByTypeStatus extends ConsoleStatus {
                 // 数値が入力された場合，その数値と同じIDをもつ
                 // レコードがselectedListにあるかどうか判定し，
                 // あればそれを次の状態DisplayPersonStatusに渡す
+                if(s.equals("N") || s.equals("P")){
+                    return this;
+                }else{
                 try {
                     int i = Integer.parseInt( s );
                     Person p = selectedList.get( i );
@@ -115,3 +118,4 @@ public class DisplayPersonsByTypeStatus extends ConsoleStatus {
                 }
             }
         }
+}

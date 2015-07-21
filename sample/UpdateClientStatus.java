@@ -59,9 +59,9 @@ public class UpdateClientStatus extends ConsoleStatus {
 			return;
 		}
 
-		// 従業員の情報の出力
+		// 顧客の情報の出力
 		System.out.println( c.toString() );
-
+		
 		System.out.println( "\n更新したい項目を入力してください。" );
 		// messagesの各文字列を順に表示する
 		for( int idx = 0; idx < messages.length; idx++ )

@@ -77,7 +77,8 @@ public class DisplayPersonsByNameStatus extends ConsoleStatus {
 			}else if(code.equals("N")){
 				if(listsize > next_start_id){
 					System.out.println("次のページを表示");
-					int rows = listsize- next_start_id >= 3 ? 3 : listsize - next_start_id;
+					int rows = listsize- next_start_id >= 3 ? 
+																		3 : listsize - next_start_id;
 					for(int i=next_start_id; i<next_start_id+rows; i++){
 						System.out.println( selectedList.getRecord(i).toString() );
 					}
